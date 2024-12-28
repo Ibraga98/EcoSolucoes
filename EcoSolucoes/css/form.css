@@ -1,0 +1,26 @@
+form label {
+    font-weight: bold;
+    color: #2e4d2e; /* Mantém o texto do formulário verde */
+}
+
+form input, form select, form button {
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #8bc34a; /* Borda verde médio */
+    border-radius: 5px;
+    font-size: 16px;
+    color: #2e4d2e; /* Cor de texto nos campos */
+    background-color: #eaf7ea; /* Fundo verde muito claro */
+}
+
+form button {
+    background-color: #4caf50; /* Um verde atraente para o botão */
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #45a049; /* Um pouco mais escuro ao passar o mouse */
+}
