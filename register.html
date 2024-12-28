@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f5e9; /* Ecological light green background */
+            color: #1b5e20; /* Dark green text */
+        }
+        form {
+            border: 2px solid #66bb6a; /* Soft green border */
+            border-radius: 10px;
+            background-color: #a5d6a7; /* Soft green form background */
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #1b5e20; /* Dark green heading text */
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #2e7d32; /* Medium green label text */
+        }
+        input, select {
+            width: calc(100% - 10px);
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #81c784; /* Green border */
+            border-radius: 5px;
+            background-color: #e8f5e9; /* Light green background */
+        }
+        button {
+            background-color: #388e3c; /* Darker green button */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #2e7d32; /* Slightly darker green on hover */
+        }
+    </style>
+</head>
+<body>
+<form action="php/login.php" method="POST">
+    <!-- Chama o backend na pasta "php/login.php" -->
+    <input type="hidden" name="action" value="register">
+    <h2>Formulário de Registro</h2>
+
+    <label for="username">Nome de Utilizador:</label>
+    <input type="text" name="username" id="username" required>
+
+    <label for="email">Endereço eletrónico:</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="password">Senha:</label>
+    <input type="password" name="password" id="password" required>
+
+    <label for="user_type">Tipo de Utilizador:</label>
+    <select name="user_type" id="user_type" required>
+        <option value="user">Utilizador</option>
+        <option value="moderator">Moderador</option>
+        <option value="admin">Administrador</option>
+    </select>
+
+    <button type="submit">Registrar</button>
+</form>
+</body>
+</html>

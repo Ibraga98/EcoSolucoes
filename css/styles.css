@@ -1,0 +1,61 @@
+/* css/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaf7ea; /* Um tom verde claro */
+    color: #2e4d2e; /* Um verde mais escuro para texto */
+}
+
+header {
+    background: #2e7d32; /* Verde escuro para o cabeçalho */
+    color: #ffffff; /* Texto branco para contraste */
+    padding: 10px 20px;
+    text-align: center;
+}
+
+main {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+    background: #ffffff; /* Fundo branco para os formulários */
+    border: 1px solid #8bc34a; /* Verde médio para borda */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Links */
+a {
+    color: #4caf50; /* Verde do botão */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logout-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #d32f2f;
+}
+
+
+.product-image img {
+    max-width: 100%; /* Ensure the image does not exceed the container width */
+    height: auto;    /* Maintain the image aspect ratio */
+    object-fit: cover; /* Ensure the image fills the container without distortion */
+    border-radius: 6px; /* Optional: Adds rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
