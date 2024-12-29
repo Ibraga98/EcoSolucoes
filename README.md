@@ -50,7 +50,7 @@ O EcoSoluções é uma plataforma de comércio eletrónico focada na sustentabil
 │   ├── profile.php           # Gestão de perfis de utilizadores
 │   ├── remove-from-cart.php  # Remove itens do carrinho
 ├── db.sql                  # Esquema da base de dados
-├── index.html              # Página inicial
+├── index.php              # Página inicial
 ├── register.html           # Página de registo
 ├── login.html              # Página de login
 ├── products.html           # Página de listagem de produtos
